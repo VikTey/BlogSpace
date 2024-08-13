@@ -3,7 +3,7 @@
     background-image: url(/images/contact.jpg);
     background-size: cover ;
     font-family:Arial, Helvetica, sans-serif ;
-    color: rgb(255, 255, 255);
+    color: black;
     margin: 0;
     font-size: medium;
     font-weight: bold;
@@ -103,7 +103,7 @@
 }
 .sign-button{
     display: flex;
-    width: 70%;
+    width: 80%;
 }
 .btn-content{
     flex: 0.8;
@@ -115,7 +115,9 @@
 }
 .google-sign{
     text-decoration: none;
+    color: black;
 }
+
 .btn-content:hover{
     background-color: lightblue;
 }

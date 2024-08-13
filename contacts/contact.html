@@ -6,19 +6,26 @@
         <link rel="stylesheet" href="style1.css">
     </head>
     <body id="Contact">
+        <nav class="navbar">
+            <img src="/images/logo.png" alt="Logo"> 
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="/contacts/contact.html">Contacts</a>
+            <button class="login-button" ><a href="/Login/login.html">Login</a></button>
+        </nav>
         <div  id="form">
             <h1>Contact</h1>
             <form action="/submit"  id="#contact-form">
-                <label for="fname">First Name: </label>
+                <label for="fname">First Name: </label><br>
                 <input type="text" id="fname" name="fname" required><br><br>
-                <label for="lname">Last Name: </label>
+                <label for="lname">Last Name: </label><br>
                 <input type="text" id="lname" name="lname" required><br><br>
-                <label for="Number">Mobile Number: </label>
+                <label for="Number">Mobile Number: </label><br>
                 <input type="number" id="Number" name="Number" maxlength="10"><br><br>
-                <label for="Email">Email ID: </label>
+                <label for="Email">Email ID: </label><br>
                 <input type="email" id="Email" name="Email" required><br><br>
-                <label for="info">How did you Get to know about us? </label>
-                <select id="info" name="cars">
+                <label for="info">How did you Get to know about us? </label><br>
+                <select id="info" name="info">
                     <option value="Web">Web</option>
                     <option value="Newsletter">Newsletters</option>
                     <option value="Institution">Institution</option>
@@ -34,7 +41,9 @@
                     <label for="female">Female</label>
                     <input type="radio" id="others" name="gender">
                     <label for="others">Others</label>
-                </fieldset>
+                </fieldset><br>
+                <label for="message">Message:</label><br>
+                <textarea type="message" name="message" maxlength="200" rows="10" cols="70" placeholder="Enter your Message (Max 200 Characters)"></textarea>               
                 <br><br><br><br>
                 <input type="submit" value="Submit" class="submit">
             </form>

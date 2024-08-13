@@ -5,17 +5,49 @@
     /* background-color: #e2dad6; */
     font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
-  
+    margin: 0px;
 }
 
 h1{
     text-align: center;
 }
-
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: r;
+}
+.navbar img {
+    height: 40px;
+    margin-right: 20px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+.login-button {
+    margin-left: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-button:hover {
+    background-color: #45a049;
+}
 #form {
-    width: 40%;
-    margin: auto;
-    margin-top: 9%;
+    width: 30%;
+    margin: 5% auto;
     background-color: #c2c2c0;
     padding: 20px 70px 70px 70px;
     border-radius: 50px;
@@ -24,25 +56,32 @@ h1{
 }
 
 input{
-    position: absolute;
+    /* position: absolute; */
     right: 50px;
     font-weight: bolder;
-    width: 40%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 20px;
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 label{
     font-weight: bolder;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 select{
-    width: 42%;
-    padding: 5px;
-    Position:absolute;
-    margin: 0 0 10px;
+    width: 100%;
+    padding: 10px;
+    /* Position:absolute; */
+    border-radius: 10px;
+    margin-top: 10px;
     right: 50px;
+}
+textarea{
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 4%;
+    width: 92%;
 }
 .submit{
     position: relative;
@@ -54,13 +93,12 @@ select{
 }
 fieldset{
     font-weight: bolder;
-    border: 2px black solid;
-    width: 100%;
-    margin: auto;
+    border: 1px black solid;
+    width: 95%;
     border-radius: 20px;
 }
 fieldset input{
-    position: relative;
+    /* position: relative; */
     right: 0;
     width: auto;
 }
