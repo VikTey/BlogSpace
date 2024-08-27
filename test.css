@@ -1,0 +1,146 @@
+div{
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    /* box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 5px 6px 20px 5px rgba(0, 0, 0, 0.19); */
+}
+p{
+    text-align: center;
+}
+.translate{
+    background-color: red;
+    transition: transform 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear; /*specifies a transition effect with the same speed from start to end*/
+}
+/* The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). */
+.translate:hover{
+    transform: translate(50px, 50px);
+}
+.rotate{
+    background-color: yellow;
+    transition: transform 2s, height 2s;
+    transition-timing-function: ease-in-out;/*specifies a transition effect with a slow start and end*/
+}
+/* The rotate() method rotates an element clockwise or counter-clockwise according to a given degree */
+.rotate:hover{
+    transform: rotate(360deg);
+    height: 200px;
+}
+.scale{
+    background-color: greenyellow;
+    transition: transform 2s;
+    transition-timing-function: ease-out;/*specifies a transition effect with a slow end*/
+    
+}
+/* The rotate() method rotates an element clockwise or counter-clockwise according to a given degree */
+.scale:hover{
+    transform: /*scaleX(0.9) scaleY(0.8)*/ scale(0.8 , 0.8);
+    animation-name: example;
+    animation-duration: 5s;
+}
+.skew{
+    background-color: blue;
+    transition: transform 2s;
+    animation: example1 8s infinite;
+}
+/* The skew() method skews an element along the X and Y-axis by the given angles. */
+.skew:hover{
+    transform: skew(20deg, 10deg) /*skewX(20deg) skewY(10deg)*/;
+    
+}
+.matrix{
+    background-color: pink;
+    transition: transform 2s;
+    transition-timing-function: ease-in;/*specifies a transition effect with a slow star*/
+}
+/* The matrix() method combines all the 2D transform methods into one. */
+/* The matrix() method combines all the 2D transform methods into one. */
+.matrix:hover{
+    transform: matrix(1.2, -0.3, 0, 2, 0, 0);
+    animation: example2 5s;
+}
+.threeD{
+    background-color: aquamarine;
+    transition: transform 10s;
+}
+.threeD:hover{
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+}
+
+.anim{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    animation: exp 6s infinite;
+    animation-direction: alternate;
+}
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: example2 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.div2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: example2 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+.div3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: example2 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+.div4 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: example2 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+.div5 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: example2 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+/* When you specify CSS styles inside the @keyframes rule, 
+the animation will gradually change from the current style to the new style at certain times. */
+@keyframes example {
+    from{background-color: greenyellow;}
+    to{background-color: green;}
+}
+@keyframes example1 {
+    /* 0%{background-color: blue;} */
+    33%{background-color: green;}
+    66%{background-color: greenyellow;}
+    100%{background-color: blueviolet;}
+}
+@keyframes example2 {
+    from{left: 0px;}
+    to{left: 300px;}
+}
+@keyframes exp{
+    0%{background-color: violet; left: 0px; top: 0px; }
+    25%{background-color: indigo; left: 300px; top: 0px; }
+    50%{background-color: blue; left: 300px; top: 300px; }
+    75%{background-color: green; left: 0px; top: 300px; }
+    100%{background-color: violet; left: 0px; top: 0px; }
+}
